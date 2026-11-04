@@ -1,55 +1,202 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #516d8a;
-    color: #e0e3ea;
+/* CONFIGURAÇÕES GERAIS */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #344256;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* CABEÇALHO */
 header {
-    background-color: #4c6071;
-    color: rgb(235 228 228);
+    background: linear-gradient(135deg, #344e68, #607d98);
+    color: #ffffff;
     text-align: center;
-    padding: 30px;
+    padding: 55px 20px;
+    border-bottom: 5px solid #a9bfd4;
 }
 
-h1 {
-    font-size: 36px;
+header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-h2 {
-    color: #cad0db;
-}
-
-p {
+header p {
     font-size: 18px;
-    line-height: 1.6;
+    color: #e0e8f0;
 }
 
+/* TÍTULOS */
+h2 {
+    color: #344e68;
+    font-size: 26px;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #c5d3e0;
+}
+
+/* PARÁGRAFOS */
+p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* SEÇÕES */
 section {
-    background-color: rgb(62 61 113);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #dce4ed;
+    box-shadow: 0 4px 15px rgba(40, 60, 80, 0.08);
 }
 
+/* IMAGENS */
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    margin: 20px auto;
+    border-radius: 14px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* LINKS */
 a {
-    color: #cfd4de;
+    color: #35658e;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 a:hover {
+    color: #1d3f5e;
     text-decoration: underline;
 }
 
+/* FORMULÁRIO */
+fieldset {
+    border: 2px solid #d5e0eb;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f8fafc;
+}
+
+legend {
+    font-weight: 700;
+    color: #344e68;
+    padding: 0 12px;
+    font-size: 18px;
+}
+
+/* GRUPOS DE CAMPOS */
+.campo-grupo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-grupo label {
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #344256;
+}
+
+.campo-grupo input,
+.campo-grupo textarea {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+    outline: none;
+    border-color: #527da5;
+    box-shadow: 0 0 0 3px rgba(82, 125, 165, 0.15);
+}
+
+/* BOTÕES */
+.botoes-grupo {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.botoes-grupo button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #35658e;
+    color: #ffffff;
+}
+
+button[type="reset"] {
+    background-color: #718096;
+    color: #ffffff;
+}
+
+.botoes-grupo button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* RODAPÉ */
 footer {
-    background-color: #536f86;
-    color: rgb(224 232 222);
+    background-color: #344e68;
+    color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+}
+/* ESTILO DOS LINKS */
+a {
+    color: #35658e;          /* Cor azul dos links */
+    text-decoration: none;   /* Remove o sublinhado */
+    font-weight: 600;
+    transition: 0.3s;        /* Suaviza a mudança de cor */
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+a:hover {
+    color: #e67e22;          /* Muda para laranja */
+    text-decoration: underline;
+    cursor: pointer;
 }
